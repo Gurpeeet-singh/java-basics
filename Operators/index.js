@@ -48,7 +48,32 @@ let points = 90;
 let type = points > 100 ? 'gold': 'silver'; //this will be true as points is 110, //statemnts saying if points is higher than 100 assing gold to the variable type else, assgin silver
 console.log(type)
 
-
-
 //logical
+
+
+//logical AND (&&)
+//returns true if both operands are true 
+console.log(true && true) //will be true 
+console.log(false && true) //will be false
+
+//real life example
+let highincome = true;
+let goodcreditscore = true;
+let eligibleforloan = highincome && goodcreditscore
+console.log(eligibleforloan)
+
+//logical OR (||)
+//returns if one is true 
+
+console.log(false && true) //will be true 
+console.log(false && false) //will be false
+
+let highincome1 = true;
+let goodcreditscore1 = false;
+let eligibleforloan1 = highincome1 || goodcreditscore1
+console.log(eligibleforloan1)
+// NOT (!) 
+// opposite
+let applicationrefused = !eligibleforloan; 
+console.log(applicationrefused)
 //bitwise
