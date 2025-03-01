@@ -64,14 +64,20 @@ console.log(selection.length)
 //array a data struture used to represent a list of items
 
 //funtions 
+//performing a task
 function greet(surname){
     console.log('Hello World');
     console.log('Hello ' + surname)
-
-
-    //body of the function
+ //body of the function
 } //no need for a semicolon here
-
-//calling a function 
 greet(surname); //using a variable
 greet('Mary'); // Not using a variable
+//calculation  a value 
+function square(number){
+    return number * number
+}
+
+let number = square(2);
+console.log(number); //one way of writing it 
+console.log(square(2)); //Another way of writing it
+//calling a function 
