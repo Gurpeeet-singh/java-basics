@@ -15,11 +15,14 @@ console.log(x++); //shows the intial value and then does the icrement
 console.log(--x); //decrement first then itll show
 console.log(x--); //decrement the intial value and then does the icrement
 
-
-
-
-
 //assignment 
+
+// x++; = to x = x + 1
+// x = x + 5 is equal to x +=5
+// all of the arithemitc has this combination such as, (*=, /=, ETC)
+
+
+
 //comparison
 //logical
 //bitwise
