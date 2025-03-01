@@ -30,5 +30,17 @@ console.log(x <= 0);
 //equality
 console.log(x === 0); //if it equal to it
 console.log(x !== 0); //check if it isnt equal 
+
+//equality 2
+//strict equality (has to be the same data type and value)
+console.log(1 === 1); //this will be true 
+console.log('1' === 1); //this will be false
+
+//lose equality looks at value not data type 
+console.log(1 == 1); //this will be true 
+console.log('1' == 1); //this will be true 
+//most of the time you should be using the strict equality as its more precise and accuarate 
+
+
 //logical
 //bitwise
