@@ -31,3 +31,7 @@ let age = 30; //number literal
 let isApproved = true; //boolean literal (false as well)
 let Firstname; // undefined (explicity say let Firstname = undefine; (not often))
 let lastname  = null; //none  
+
+//java is a dynamic language, meaning the data type can change 
+//typeof {variable} in the console in order to see what data type it is
+//float is still using number data type
