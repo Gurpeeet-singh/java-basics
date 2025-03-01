@@ -76,4 +76,16 @@ console.log(eligibleforloan1)
 // opposite
 let applicationrefused = !eligibleforloan; 
 console.log(applicationrefused)
+
+//logical operators with non-booleans
+//falsy (false)
+    //undefine
+    //null
+    //0
+    //false
+    //''
+    //Nan (not a number) special character in javascript
+//truthy (anything thats not falsy)
+
+
 //bitwise
