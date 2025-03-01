@@ -62,3 +62,16 @@ SelectedColors[2] = 1; //adding something to the array
 console.log(SelectedColors)
 console.log(selection.length)
 //array a data struture used to represent a list of items
+
+//funtions 
+function greet(surname){
+    console.log('Hello World');
+    console.log('Hello ' + surname)
+
+
+    //body of the function
+} //no need for a semicolon here
+
+//calling a function 
+greet(surname); //using a variable
+greet('Mary'); // Not using a variable
