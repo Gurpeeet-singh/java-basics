@@ -22,3 +22,12 @@ console.log(InterestRate)
 
 //if you need to reassign use let 
 // if you do not need to reassign use const
+
+
+//data types 
+//primitives (strings, numbers, booleans, undefined, none)
+let surname = 'Joe'; //string literal
+let age = 30; //number literal
+let isApproved = true; //boolean literal (false as well)
+let Firstname; // undefined (explicity say let Firstname = undefine; (not often))
+let lastname  = null; //none  
