@@ -41,6 +41,14 @@ console.log(1 == 1); //this will be true
 console.log('1' == 1); //this will be true 
 //most of the time you should be using the strict equality as its more precise and accuarate 
 
+//ternary operators
+
+//scenario: if they have more than 100 points they are a 'gold' customer, if not they are a 'silver' customer.
+let points = 90;
+let type = points > 100 ? 'gold': 'silver'; //this will be true as points is 110, //statemnts saying if points is higher than 100 assing gold to the variable type else, assgin silver
+console.log(type)
+
+
 
 //logical
 //bitwise
