@@ -54,3 +54,11 @@ console.log(person.name)
 let selection = 'name';
 person[selection] = 'Gurpreet';
 console.log(person.name) 
+
+
+//arrays
+let SelectedColors = ['red', 'blue']; //Array literal
+SelectedColors[2] = 1; //adding something to the array
+console.log(SelectedColors)
+console.log(selection.length)
+//array a data struture used to represent a list of items
