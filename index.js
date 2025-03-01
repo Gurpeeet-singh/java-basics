@@ -35,3 +35,22 @@ let lastname  = null; //none
 //java is a dynamic language, meaning the data type can change 
 //typeof {variable} in the console in order to see what data type it is
 //float is still using number data type
+
+//objects 
+let person = {
+    name: 'Joe',  //dont need the variables above it 
+    age: 30
+};  //object literal
+
+//dot notation 
+person.name = 'John';   
+console.log(person.name) //Shorter so itll be used much more 
+
+//bracket notation
+person['name'] = 'Mary';
+console.log(person.name) 
+
+//bracket notation can be used for User controlled stuff 
+let selection = 'name';
+person[selection] = 'Gurpreet';
+console.log(person.name) 
