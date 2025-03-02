@@ -107,7 +107,7 @@ for (let i = 0; i <= 5; i++) {
 // while loops 
 
 let i = 0
-//while (condition) 
+//while (condition) in these types of loops the condition is evaluated before
 while (i <= 5) {
     if (i % 2 !== 0) {
         console.log(i);
@@ -115,9 +115,14 @@ while (i <= 5) {
     i++;    
 }
 
-
-
-
 //do..while loops
+
+i = 0; //this is evaluated after    
+do {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++;      
+} while(i <= 5);
 // for..in loops
 // for..of loops
