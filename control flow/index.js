@@ -157,3 +157,18 @@ for (let index in colors)
     if (colors[index] ==='red') {
         console.log("Red is such a bad color fr fr")
     }
+
+
+// for...of
+for(let color of colors)
+    console.log(color);
+
+
+for(let color1 of colors)
+    if (color1 === 'red'){
+        console.log("red again is crazy")
+    }
+
+
+
+    
