@@ -124,5 +124,36 @@ do {
     }
     i++;      
 } while(i <= 5);
+
+
+//infinite loops
+// i = 0
+// while (i !== 4) {
+//     console.log('hello')
+// }
+//dont do this, lol, youll break your browser
+
+
 // for..in loops
-// for..of loops
+const person = {
+    name: 'Joe',
+    age: 30 
+};
+
+// for (let key in person)
+    //console.log(key)
+for (let key in person)
+    console.log(key)
+
+for (let key in person)
+    console.log(key, person[key])
+
+
+const colors = ['red', 'green', 'blue']
+for (let index in colors)
+    console.log(index, colors[index])
+
+for (let index in colors)
+    if (colors[index] ==='red') {
+        console.log("Red is such a bad color fr fr")
+    }
