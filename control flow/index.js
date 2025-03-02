@@ -90,21 +90,34 @@ for (let i = 0; i < 5; i++) {
     console.log("Hello World", i)
 }
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i <= 5; i++) {
     if (i % 2 !== 0) {
         console.log(i)
     }
 }
 
-for (let i = 5; i > 1; i--) {
-    if (i % 2 !== 0) {
-        console.log(i)
-    }
-}
+// for (let i = 5; i > 1; i--) {
+//     if (i % 2 !== 0) {
+//         console.log(i)
+//     }
+// }
 
     
 
 // while loops 
+
+let i = 0
+//while (condition) 
+while (i <= 5) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++;    
+}
+
+
+
+
 //do..while loops
 // for..in loops
 // for..of loops
