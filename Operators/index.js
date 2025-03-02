@@ -89,3 +89,10 @@ console.log(applicationrefused)
 
 
 //bitwise
+
+// 1 = 00000001  
+//each digit on the left it a bit 
+// 2 = 00000010
+
+console.log(1 | 2) //bitwise OR (logical got 2 ||) would equal 3
+console.log(1 & 2) //would be 0
