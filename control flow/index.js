@@ -71,10 +71,40 @@ else {
 }
 
 //if is cleaner, but its up to you
-
-
-
-
-
 //this is just the top one
 
+//for...
+
+
+//we want to displayy hello world 5 times
+//we could do console.log('Hello World')x5 but no theres a better way
+
+//we have many types of loops 
+//for loops
+
+
+// for (initialexpression; condition; increment expression) 
+        //statement
+
+for (let i = 0; i < 5; i++) {
+    console.log("Hello World", i)
+}
+
+for (let i = 0; i < 5; i++) {
+    if (i % 2 !== 0) {
+        console.log(i)
+    }
+}
+
+for (let i = 5; i > 1; i--) {
+    if (i % 2 !== 0) {
+        console.log(i)
+    }
+}
+
+    
+
+// while loops 
+//do..while loops
+// for..in loops
+// for..of loops
