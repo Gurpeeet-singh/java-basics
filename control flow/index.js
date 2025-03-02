@@ -169,6 +169,13 @@ for(let color1 of colors)
         console.log("red again is crazy")
     }
 
-
-
-    
+i = 0;
+while ( i <= 10) {
+    // if (i == 5) break; //you jump out of a loop here
+    if (i % 2 === 0 ) {
+        i++;
+        continue; //old things, you might need it, but its an ugly way
+    }
+    console.log(i)
+    i++;
+}
