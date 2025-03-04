@@ -213,3 +213,7 @@ console.log(another1)
 //unlike low level programming languages such as C and c++ you have to manually reallocate and deallocate data
 // in java script you dont 
 // we have something called a garabage collecter and its their job to find all variables and constants that are not being used anymore and then deallocate the data 
+
+//javascript has many inbuilt objects. the main one is math 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math 
+//click the link, this is the best place when your looking for all references   
