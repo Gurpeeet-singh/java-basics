@@ -104,3 +104,24 @@ delete circle.draw;
 
 console.log(circle);
 
+
+
+
+//functions are also objects 
+
+function newcircle(radius) {
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw')
+    }
+}
+//when you when newcircle.  you get all the options like you would on a constructor or a factory function
+const another = new newcircle(1) //dont really need the new
+//this can be written like this as well
+newcircle.call({}, 1) //this calls the function
+//another method
+newcircle.apply({}, 1)
+//in apply instead of passing them explicity like in the call one (1, 2, 3, 4 ....)
+// you could put em in an array
+// [1, 2, 3, 4]
+//can be useful when you have an array somewhere and want to pass it through using the apply
