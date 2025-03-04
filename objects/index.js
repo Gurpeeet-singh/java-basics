@@ -208,3 +208,8 @@ console.log(another) //checking if it has been copied over and it has
 
 const another1 = {...circle }; // the ... means thats it taking all of the properties of circle and copying it into here
 console.log(another1)
+
+
+//unlike low level programming languages such as C and c++ you have to manually reallocate and deallocate data
+// in java script you dont 
+// we have something called a garabage collecter and its their job to find all variables and constants that are not being used anymore and then deallocate the data 
