@@ -53,3 +53,31 @@ const circle1 = createricle(1);
 console.log(circle1);
 const circle2 = createricle(2);
 console.log(circle2);
+
+
+//for factory functions you dont need the 'new'part
+// you use 'this' for constructor functions, you dont for factory ones
+// you use pascal notation for constructor
+
+//constructor function
+//point of it is to create or make something 
+//camel notation: oneTwoThreeFour
+//pascal notation: OneTwoThreeFour
+//when using constructor functions use pascal notations 
+
+function Circle(radius) {
+    //instead of returning we do something else
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    };
+}   
+
+const circle3 = new Circle(1);
+//when said new 
+// you create an empty object
+//set 'this.radius' to the radius 
+//will return the new object to the new object   
+
+
+//both patterns are real good for it, but the constructor functions is more familiar with people who code with java, C++, and C#
