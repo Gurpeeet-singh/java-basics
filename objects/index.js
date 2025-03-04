@@ -125,3 +125,41 @@ newcircle.apply({}, 1)
 // you could put em in an array
 // [1, 2, 3, 4]
 //can be useful when you have an array somewhere and want to pass it through using the apply
+
+
+//in java script we have 2 types
+//value types (also can be called primitives)
+//in value types we have these types
+//number
+//string
+//boolean
+//symbol
+//uindefined
+//null
+
+let x = 10;  //defining a primitive 
+let y = x;
+
+
+x = 20;
+// go into console and write x which will = 20 and y which will = 10
+//this shows that they are compeletly independant   
+
+//reference types
+//in here we have 
+//objects 
+//arrays
+//funtions 
+
+
+let i = { value: 10};
+let z = i;
+
+
+i.value = 20;
+
+// here when you type i into the console itll be 20, same with z. this shows that they are dependant 
+
+
+//primitives are copied by their value 
+//objects are copied by their reference 
