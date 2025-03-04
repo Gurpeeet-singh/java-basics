@@ -188,3 +188,23 @@ for(let entry of Object.entries(newcircle)) //outputs both as an array
     console.log(entry);
 
 if('radius' in newcircle) console.log('yes');   //looking for 'radius in new circle
+
+//cloning an object
+
+// const another = {};
+
+// for(let key in newcircle){
+//     another[key] = newcircle[key]; //THE PROCESS of copying the data from newcircle into another
+// }
+//this way that we have done is a little bit old. In modern a Javascript there is a better way to do it 
+
+// const another = Object.assign({}, circle) // this is the better way, thje object can start with its own varibales inside 
+const another = Object.assign({
+    color: 'yellow'
+}, circle)
+console.log(another) //checking if it has been copied over and it has
+ //theres an even better way
+
+
+const another1 = {...circle }; // the ... means thats it taking all of the properties of circle and copying it into here
+console.log(another1)
