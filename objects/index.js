@@ -37,22 +37,22 @@
 //         }
 //     }; //can store anything u want   
 // }
-function createricle(radius) {
-    return {
-       radius, //if they key and the paramter name are the same you can just do this
-    //    draw: function() {
-    //        console.log('wsg');
-    //    } 
-    //      instead of doind this for the function you can do it like below
-        draw(){
-            console.log('draw')
-        }
-   }; //can store anything u want   
-}
-const circle1 = createricle(1);
-console.log(circle1);
-const circle2 = createricle(2);
-console.log(circle2);
+// function createricle(radius) {
+//     return {
+//        radius, //if they key and the paramter name are the same you can just do this
+//     //    draw: function() {
+//     //        console.log('wsg');
+//     //    } 
+//     //      instead of doind this for the function you can do it like below
+//         draw(){
+//             console.log('draw')
+//         }
+//    }; //can store anything u want   
+// }
+// const circle1 = createricle(1);
+// console.log(circle1);
+// const circle2 = createricle(2);
+// console.log(circle2);
 
 
 //for factory functions you dont need the 'new'part
@@ -65,15 +65,15 @@ console.log(circle2);
 //pascal notation: OneTwoThreeFour
 //when using constructor functions use pascal notations 
 
-function Circle(radius) {
-    //instead of returning we do something else
-    this.radius = radius;
-    this.draw = function(){
-        console.log('draw');
-    };
-}   
+// function Circle(radius) {
+//     //instead of returning we do something else
+//     this.radius = radius;
+//     this.draw = function(){
+//         console.log('draw');
+//     };
+// }   
 
-const circle3 = new Circle(1);
+// const circle3 = new Circle(1);
 //when said new 
 // you create an empty object
 //set 'this.radius' to the radius 
@@ -81,3 +81,26 @@ const circle3 = new Circle(1);
 
 
 //both patterns are real good for it, but the constructor functions is more familiar with people who code with java, C++, and C#
+
+
+//functions are dynamic in javascript
+//this means you can add new items to the object and also delete items within the object
+
+
+
+const circle = {
+    radius: 1
+};
+//to add you could do this
+circle.color = 'yellow';
+circle.draw = function() {
+    console.log('draw')
+}
+
+//to delete you could do 
+delete circle.color;
+delete circle.draw; 
+
+
+console.log(circle);
+
