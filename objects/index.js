@@ -217,3 +217,26 @@ console.log(another1)
 //javascript has many inbuilt objects. the main one is math 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math 
 //click the link, this is the best place when your looking for all references   
+
+
+//we have 2 types of strings 
+//string primitive
+const message = 'hello world'; 
+//string object 
+const message1 = new String('hi');
+
+//properties and methods for strings
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+//when creating a new line you need to use \n, however thatll look very noisy in the code, this is where
+//template literals come into clutch 
+
+// we know about these literals 
+//object literals {}
+//boolean true, false
+//string ''
+//template literals ``
+const message3 = `Hello 
+world`
+
+//you can use ${} using the template literals to assing variables
