@@ -240,3 +240,8 @@ const message3 = `Hello
 world`
 
 //you can use ${} using the template literals to assing variables
+
+//last main object is date
+const date = new Date()
+//look here
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
