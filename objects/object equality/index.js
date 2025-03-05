@@ -1,24 +1,23 @@
 
-//address objects
-//with street 
-//city
-//zipcode
-
-
-
-const address = {
-    street: 'a',
-    city: 'b',
-    zipcode: 'c'
+function newaddress(street, city, name) {
+    this.street = street;
+    this.city = city;
+    this.name = name;
 };
 
 
-function showAddress(address) {
-    for(let key in address){
-        console.log(key + ':', address[key]);
-    };
-};
+let address1 =  new newaddress('a', 'b', 'c');
+let address2 =  new newaddress('a', 'b', 'c');
 
+function isEqual(address1, address2) {
+    for(let key in address1) {
+        if(address1[key] === address2[key]){
+            console.log("true")
+        }
+        else {
+            console.log('false')
+        }
+    }
+}
 
-
-showAddress(address)
+isEqual(address1, address2)
