@@ -1,24 +1,19 @@
+//make a factory and constructor function
 
-//address objects
-//with street 
-//city
-//zipcode
+function address(street, city, name) {
+        street,
+        city,
+        name
+}
 
+function newaddress(street, city, name) {
+    this.street = street;
+    this.city = city;
+    this.name = name;
+}
+//factory 
+console.log(address('1', '2', '3'))
 
-
-const address = {
-    street: 'a',
-    city: 'b',
-    zipcode: 'c'
-};
-
-
-function showAddress(address) {
-    for(let key in address){
-        console.log(key + ':', address[key]);
-    };
-};
-
-
-
-showAddress(address)
+//constructor
+let y = new newaddress('a', 'b', 'c')
+console.log(y)
