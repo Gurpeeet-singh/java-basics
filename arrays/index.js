@@ -75,3 +75,22 @@ console.log(course)
 // you can make this code even shorter if your function is only 1 line 
 const course1 = courses.find(course => course.name === 'BIOLOGY')
 
+
+//removing elements
+
+nums = [1, 2, 3, 4];
+
+
+//pop method (removed the last one in the list)
+nums.pop();
+//removes 4 from the list 
+
+// shift method, removes the first one in the list 
+
+nums.shift();
+// will remove 1 from the list 
+
+//splice to remove from the middle 
+numbers.splice(2, 2)
+// first parameter is from what index, second is how many values do you want to delete 
+
