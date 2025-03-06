@@ -66,3 +66,12 @@ const course = courses.find(function() {
 console.log(course)
 // if it finds the data we are looking for itll print it, if it cant find it itll print undefinded 
 // you can change the .find, to .findIndex, tell you the index of where the data is 
+
+//arrow functions 
+
+// const course1 = courses.find(course1 => {
+//   return course.name === 'BIOLOGY';
+//   });
+// you can make this code even shorter if your function is only 1 line 
+const course1 = courses.find(course => course.name === 'BIOLOGY')
+
