@@ -48,5 +48,21 @@ console.log(numbers.includes(1));
 // all of these have a second parameter which is optional which is the starting index, this is self explanatory 
 
 
+// how to look for objects in arrays 
+const courses = [
+  {id: 1, name: 'BIOLOGY'},
+  {id: 2, name: 'MATHS'},
+  {id: 3, name: 'SCIENCE'}
+]
+
+console.log(courses.include{id: 1, name: 'BIOLOGY'}); //this will be false because it they are difference reference points so and they are in different memory locations 
+//this is the right way
 
 
+const course = courses.find(function() {
+  return course.name === 'BIOLOGY';
+  });
+
+console.log(course)
+// if it finds the data we are looking for itll print it, if it cant find it itll print undefinded 
+// you can change the .find, to .findIndex, tell you the index of where the data is 
