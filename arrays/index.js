@@ -156,3 +156,31 @@ amount.forEach(number => console.log(number));
 numbers = [1, 2, 3]
 const joined = numbers.join(',')
 console.log(joined) //this will print out 1, 2, 3
+
+
+//sorting arrays 
+numbers = [2, 1, 3];
+numbers.sort(); // will sort the array 
+
+
+numbers.reverse(); // will reverse the order so itll be 3, 2, 1
+
+// how to sort with objects 
+
+const code = [
+    {id: 1, name: 'Node.js'},
+    {id: 2, name: 'Javascript'},
+
+]
+
+code.sort(function(a, b) {
+    // if a is less than be we should return -1
+    // if a is greater than be we should return 1 
+    // if a is equal to b than we should return 0
+    // you have to make sure both of them are the same case as it may not work
+    const nameA =  a.name.toUpperCase(); // should either be toUpperCase or toLowerCase
+    const nameB = b.name.toUpperCase();
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+});
