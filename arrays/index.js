@@ -112,3 +112,17 @@ while (amount.length > 0) {
 };
 
 //reccomended to use the second one but its up to you
+
+
+//how to combine and slice an array 
+
+//combining
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+ 
+const combined = first.concat(second); //concatenates these 2 together 
+console.log(combined); //this prints out first and second arrays into one array 
+
+// to slice you can use the slice command 
+const slice = combined.slice(2, 4); // you can exlclude the second index and that means that itll do it from the first index until the array is finished 
+console.log(slice); //will print out 3 and 4 in a different table 
