@@ -55,7 +55,7 @@ const courses = [
   {id: 3, name: 'SCIENCE'}
 ]
 
-console.log(courses.include{id: 1, name: 'BIOLOGY'}); //this will be false because it they are difference reference points so and they are in different memory locations 
+console.log(courses.include,{id: 1, name: 'BIOLOGY'}); //this will be false because it they are difference reference points so and they are in different memory locations 
 //this is the right way
 
 
@@ -94,3 +94,21 @@ nums.shift();
 numbers.splice(2, 2)
 // first parameter is from what index, second is how many values do you want to delete 
 
+// how to empty an array 
+
+let amount = [1, 2, 3, 4, 5];
+amount  = [];
+
+//another way 
+amount.length = 0;
+
+//another another way
+amount.splice(0, numbers.length)
+
+//also another way 
+
+while (amount.length > 0) {
+    amount.pop();
+};
+
+//reccomended to use the second one but its up to you
