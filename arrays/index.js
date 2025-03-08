@@ -184,3 +184,18 @@ code.sort(function(a, b) {
     if (nameA > nameB) return 1;
     return 0;
 });
+
+
+
+//testing elements in an array 
+numbers = [1, 2, 3];
+
+numbers.every(function(value) {
+    return value >= 0;
+});
+
+// you can use some as well, and that checks if there at least 1 true
+
+numbers.some(function(value) {
+    return value >= 0;
+});
