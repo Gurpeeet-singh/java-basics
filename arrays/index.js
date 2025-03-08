@@ -199,3 +199,14 @@ numbers.every(function(value) {
 numbers.some(function(value) {
     return value >= 0;
 });
+
+
+//how to filter through and array 
+numbers = [1, -1, 2, 3];
+
+const filtered = numbers.filter(function(value){
+    return value >= 0;
+});
+
+console.log(filtered); // will return all values in an array
+// output will be [1, 2, 3]
