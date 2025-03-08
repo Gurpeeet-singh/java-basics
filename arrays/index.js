@@ -126,3 +126,9 @@ console.log(combined); //this prints out first and second arrays into one array
 // to slice you can use the slice command 
 const slice = combined.slice(2, 4); // you can exlclude the second index and that means that itll do it from the first index until the array is finished 
 console.log(slice); //will print out 3 and 4 in a different table 
+
+// you can use the spreate operater as well 
+
+const combined1 = [...first, ...second]; // you can easily add an extra element
+// const combined1 = [...first, 'a' ...second, 'b'];
+console.log(combined1) // will print [1, 2, 3, 4, 5, 6]
