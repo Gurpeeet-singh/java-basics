@@ -150,3 +150,9 @@ amount.forEach(function(number) {
 //that code above can be simplified 
 amount.forEach(number => console.log(number));
 // you would need () around number if there was more than one paramter
+
+
+//joining arrays 
+numbers = [1, 2, 3]
+const joined = numbers.join(',')
+console.log(joined) //this will print out 1, 2, 3
