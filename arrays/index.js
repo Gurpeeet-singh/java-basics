@@ -132,3 +132,21 @@ console.log(slice); //will print out 3 and 4 in a different table
 const combined1 = [...first, ...second]; // you can easily add an extra element
 // const combined1 = [...first, 'a' ...second, 'b'];
 console.log(combined1) // will print [1, 2, 3, 4, 5, 6]
+
+
+//iterating an array 
+amount = [1, 2, 3, 4, 5];
+//one way using a for loop
+for (let index of numbers) {
+    console.log(index) //will print out 1, 2, 3, 4, 5, 6
+}
+
+//another way 
+amount.forEach(function(number) {
+    console.log(number);
+});
+
+
+//that code above can be simplified 
+amount.forEach(number => console.log(number));
+// you would need () around number if there was more than one paramter
