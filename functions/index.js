@@ -27,7 +27,7 @@ let run1 = function walk() {
 //     return a + b
 // }
 
-console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+// console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 // youll get 3
 
 // you dont need to have all parameters filled, if you dont youll get NaN in this scenario. you can also
@@ -35,11 +35,34 @@ console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
 // how to make a flexable function 
 
-function sum() {
-    let total = 0;
-    for(let value of arguments) {
-        total =+ value;
-    }
-    return total;
-}
+// function sum() {
+//     let total = 0;
+//     for(let value of arguments) {
+//         total =+ value;
+//     }
+//     return total;
+// }
 // would return whatever them numbers are added up 
+
+
+//rest operator 
+// function sum(...args) { //this is the rest operator, spread operator is for arrays
+//     console.log(args);
+// } 
+//would output an array on all the values 
+
+// function sum(...args) {
+//     return args.reduce((a, b) => a + b); 
+// } //will return the same 
+
+
+//so lets make a function that add a discout
+function sum(discount, ...prices) { // rest parameter must be the last one in the function 
+
+    const total = prices.reduce((a, b) => a + b); 
+    return total * (1 - discount)
+};
+
+
+console.log(sum(0.1, 20, 30))
+
