@@ -73,3 +73,32 @@ function interest(principle, rate, years) { // you can also do function interest
     years = years || 5; // so if theres no value for years or rates, itll use the default values here
     return principle * rate/100 * years
 } // what if we want default parameters 
+
+
+//getter and setters 
+
+const person = {
+    firsname: 'Joe',
+    lastname: 'Bob'
+}
+console.log(firsname + lastname) // or
+console.log(`${person.firsname}` `${person.lastname}`) // this could be a pain to do if you have mutliple so heres a better way 
+
+
+const anotherperson = {
+    firsname: 'Joe',
+    lastname: 'Bob',
+    get fullname() { // this is a getter now
+        return  `${person.firsname} ${person.lastname}`
+    }, 
+    set fullname(value) {
+        const parts = value.split('');
+        this.firsname = parts[0];
+        this.surname = parts[1];
+    }
+}
+person.fullname = 'John Smith'
+console.log(anotherperson)
+
+// getters => access properties 
+// setter => change properties
