@@ -14,3 +14,9 @@ let run = function() {
 let run1 = function walk() {
     console.log("wsg")
 }; //; here 
+
+//hoisting 
+// for a function declaration you can call the function before it has been defined
+// you cant for a function expression 
+
+//hoisting defintion: the process of moving function declarations to the top of the file. This is done automatically done by the javascript engine upon executing the code
