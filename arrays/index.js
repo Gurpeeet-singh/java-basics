@@ -214,3 +214,23 @@ console.log(filtered); // will return all values in an array
 //mapping an array 
 const items = filtered.map(n => '<li>' + n + '</li>');
 console.log(items)
+
+
+//reducing an array
+numbers = [1, 2, 3, 4]; //how to get the sum of all of them. 
+let sum = 0;
+
+for(let n of numbers);
+    sum += n;
+console.log(sum);
+
+//this is one way of wrtiing that code, but we can also reduce, in order to do the same thing
+
+// numbers.reduce((//accumulator, //current value ) => {
+// });
+
+const sum1 = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(sum1) // does the same thing but its cleaner
