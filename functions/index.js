@@ -66,3 +66,10 @@ function sum(discount, ...prices) { // rest parameter must be the last one in th
 
 console.log(sum(0.1, 20, 30))
 
+//default parameter
+
+function interest(principle, rate, years) { // you can also do function interest(principle, rate = 3.5, years = 5) much cleaner
+    rate =  rate || 3.5;
+    years = years || 5; // so if theres no value for years or rates, itll use the default values here
+    return principle * rate/100 * years
+} // what if we want default parameters 
