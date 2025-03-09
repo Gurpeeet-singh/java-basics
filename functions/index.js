@@ -91,13 +91,24 @@ const anotherperson = {
     get fullname() { // this is a getter now
         return  `${person.firsname} ${person.lastname}`
     }, 
-    set fullname(value) {
+    set fullname(value) { // we need to add defensive programming
+        if (typeof value !== 'string')
+            throw new Error('Value is not string'); //throwing the new error
         const parts = value.split('');
+        if (parts.length !==2)
+            throw new error(' enter a first and last name') // defensive coding 
         this.firsname = parts[0];
         this.surname = parts[1];
     }
 }
-person.fullname = 'John Smith'
+try {
+    person.fullname = 'John Smith'; // what is this was true, null, or undefined. itll cause an error
+}
+catch (e) {
+    alert(e)
+}
+
+
 console.log(anotherperson)
 
 // getters => access properties 
