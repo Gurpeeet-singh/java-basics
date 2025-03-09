@@ -210,3 +210,7 @@ const filtered = numbers.filter(function(value){
 
 console.log(filtered); // will return all values in an array
 // output will be [1, 2, 3]
+
+//mapping an array 
+const items = filtered.map(n => '<li>' + n + '</li>');
+console.log(items)
